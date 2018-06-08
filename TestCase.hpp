@@ -14,6 +14,7 @@ class TestCase{
   
     public:    
     TestCase(string name, ostream& out);
-     template<typename T> TestCase& check_equal(T ob1,T ob2)const;
-    
+    template<typename T> TestCase& check_equal(T ob1,T ob2)const;
+    template<typename T> TestCase& check_different(T ob1,T ob2)const;
+    template<typename T> TestCase& check_function(void*,T ob1,T ob2)const;
 };
